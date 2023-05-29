@@ -1,11 +1,4 @@
-import sys, os
-
-sys.path.append(os.path.abspath("../ACLink"))
-sys.path.append(os.path.abspath("../"))
-
-# 上面的内容在正式环境中不需要写，仅调试使用
-
-from pyaclink import AC_MSG , AC_Vehicle
+from pyaclink import AC_Vehicle
 import time
 
 a9 = AC_Vehicle("COM21")
