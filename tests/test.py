@@ -9,6 +9,5 @@ import time
 a9 = AC_Vehicle("COM21")
 
 while True:
-    print("frame : {}".format(str(a9._msg.frame)))
     print(a9.heartbeat())
     time.sleep(0.1)

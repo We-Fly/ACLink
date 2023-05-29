@@ -97,3 +97,10 @@ class AC_MSG():
         返回荷载的长度
         '''
         return self._payload_length
+    
+    @property
+    def payload(self):
+        '''
+        返回荷载
+        '''
+        return self._payload
