@@ -84,3 +84,9 @@ class AC_MSG():
         '''
         self._calc_bcc()
         return self._bcc
+    
+    def write_payload(self, payload):
+        if len(payload) == self._payload_length:
+            self._payload = payload
+        else:
+            print("error payload: length not match!\n")
