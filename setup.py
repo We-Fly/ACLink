@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ACLink",  # 包的名称
+    name="pyaclink",  # 包的名称
     version="1.0",  # 包的版本
     author="Cody Gu",
     author_email="cody23333@gmail.com",
