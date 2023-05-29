@@ -27,15 +27,22 @@
 
 | 值  | 字段名                                                          | 描述             |
 | --- | --------------------------------------------------------------- | ---------------- |
-| 0   | [ACLINK_MOTORS_ARM](#aclink_motors_arm)                         | 解锁电机         |
-| 1   | [ACLINK_MOTORS_DISARM](#aclink_motors_disarm)                   | 电机上锁         |
-| 2   | [ACLINK_TAKEOFF](#aclink_takeoff)                               | 起飞到指定高度   |
-| 3   | [ACLINK_LAND](#aclink_land)                                     | 降落             |
-| 4   | [ACLINK_CTRL_SPEED_ABSOLUTE](#aclink_ctrl_speed_absolute)       | 绝对矢量速度控制 |
-| 5   | [ACLINK_CTRL_SPEED_RELATIVE](#aclink_ctrl_speed_relative)       | 相对矢量速度控制 |
-| 6   | [ACLINK_CTRL_POSITION_ABSOLUTE](#aclink_ctrl_position_absolute) | 绝对位置控制     |
-| 7   | [ACLINK_CTRL_POSITION_RELATIVE](#aclink_ctrl_position_relative) | 相对位置控制     |
-| 8   | [ACLINK_HOLD](#aclink_hold)                                     | 悬停（刹车）     |
+| 0   | [ACLINK_ACK](#aclink_ack)                         | 心跳包         |
+| 1   | [ACLINK_MOTORS_ARM](#aclink_motors_arm)                         | 解锁电机         |
+| 2   | [ACLINK_MOTORS_DISARM](#aclink_motors_disarm)                   | 电机上锁         |
+| 3   | [ACLINK_TAKEOFF](#aclink_takeoff)                               | 起飞到指定高度   |
+| 4   | [ACLINK_LAND](#aclink_land)                                     | 降落             |
+| 5   | [ACLINK_CTRL_SPEED_ABSOLUTE](#aclink_ctrl_speed_absolute)       | 绝对矢量速度控制 |
+| 6   | [ACLINK_CTRL_SPEED_RELATIVE](#aclink_ctrl_speed_relative)       | 相对矢量速度控制 |
+| 7   | [ACLINK_CTRL_POSITION_ABSOLUTE](#aclink_ctrl_position_absolute) | 绝对位置控制     |
+| 8   | [ACLINK_CTRL_POSITION_RELATIVE](#aclink_ctrl_position_relative) | 相对位置控制     |
+| 9   | [ACLINK_HOLD](#aclink_hold)                                     | 悬停（刹车）     |
+
+### ACLINK_ACK
+
+- `荷载` 没有荷载
+
+- `作用` 用于测试对方是否在线，如果在线，对方会发送一个ACK作为应答
 
 ### ACLINK_MOTORS_ARM
 
