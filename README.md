@@ -185,3 +185,24 @@ ACLINK_MASK_DISABLE_YAW = 0b00000111 # 无效化对偏航角的控制
 从右往左代表参数1~8是否有效，0为False，1为True
 
 或者代表一系列布尔值
+
+## 许可信息
+
+本仓库使用 `Apache-2.0` 协议进行许可。如果有任何侵权行为或者认为本仓库侵犯了您的权利，请在 [issue](https://github.com/We-Fly/ACLink/issues) 中提出，我会尽快反馈。
+
+```text
+Copyright 2023 Cody_Gu
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+```
