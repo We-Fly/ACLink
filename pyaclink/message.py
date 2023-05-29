@@ -8,12 +8,12 @@ class AC_MSG():
     提供消息打包的一些功能
     '''
 
-    def __init__(self, message_id = "ACLINK_ACK") -> None:
+    def __init__(self, message_id: str = "ACLINK_ACK", seq: int = 0) -> None:
         self._start_tag = 0xFD # 起始标记
-        self._seq = 0 # 消息序列号，发送计数器，用于检测丢包
+        self._seq = seq # 消息序列号，发送计数器，用于检测丢包
         self.set_message_id(message_id)
 
-    def set_message_id(self, message_id):
+    def set_message_id(self, message_id: str) -> None:
         '''
         设置消息ID
         '''
@@ -65,28 +65,35 @@ class AC_MSG():
         '''
         return self._seq % 0xFF
         
-    def set_seq(self, seq):
+    def set_seq(self, seq: int):
         '''
         设置消息序列号，没有模 `0xFF` 的数字
         '''
         self._seq = seq
     
-    def seqpp(self):
+    def seqpp(self) -> None:
         '''
         消息序列号自增
         '''
         self._seq += 1
     
     @property
-    def bcc(self):
+    def bcc(self) -> int:
         '''
         计算并返回BCC校验值
         '''
         self._calc_bcc()
         return self._bcc
     
-    def write_payload(self, payload):
+    def write_payload(self, payload: list) -> None:
         if len(payload) == self._payload_length:
             self._payload = payload
         else:
             print("error payload: length not match!\n")
+
+    @property
+    def payload_length(self):
+        '''
+        返回荷载的长度
+        '''
+        return self._payload_length
