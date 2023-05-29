@@ -10,8 +10,7 @@ setup(
     packages=find_packages(),  # 需要打包的模块
     install_requires=[
         "docutils>=0.3",
-        "",
-        "",
+        "pyserial",
     ],  # 依赖的其他包
     classifiers=[  # 分类信息
         "Programming Language :: Python :: 3",
